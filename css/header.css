@@ -1,0 +1,102 @@
+*{
+    /* font-family: 'Akira Expanded', sans-serif; */
+}
+
+header{
+    height: 50px;
+    background: #272A4E;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+  
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+  
+nav ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 13px;
+    font-weight: 510;
+    opacity: .60;
+    letter-spacing: .3px;
+  
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+  
+ul li a:hover {
+    color: #ffffff ;
+    text-shadow:0px 0px 30px #b098d7;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  
+    opacity: 1;
+}
+  
+.action-bar{
+    display: flex;
+}
+  
+.action-bar, .action-bar ul li{
+    opacity: 1;
+    list-style: none;
+}
+  
+.logo{
+    position: relative;
+    font-size:8px;
+    color: #fff;
+}
+
+span{
+    font-size:14px;
+    color: #fff;
+    
+}
+  
+.logo img{
+    width: 17px;
+    padding-bottom: 4px;
+}
+  
+.logo h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Akira Expanded', sans-serif;
+}
+  
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+  
+.action-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 300px;
+}
+  
+.action-bar li{
+    padding-left: 30px;
+}
+    
+.action-bar .icon{
+    width: 15px;
+}
+  
+.action-bar .image-profile img{
+    width: 25px;  
+}
