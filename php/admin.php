@@ -7,12 +7,17 @@
     <title>STKRHUB-ADMIN </title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <style>
+      @import url(../css/header.css);
+      @import url(../css/subnav.css);
+    </style>
 </head>
 <body>
 
+<my-header></my-header>
+
 <div class="container my-5">
     <h2>List of Clients</h2>
-    <a class="btn btn-primary" href="/STKRHUB-XAMPP/php/create.php">New Client</a>
     <br>
     <table class="table">
         <thead>
@@ -64,6 +69,8 @@
 
     </table>
 </div>
+
+<script src="/STKRHUB-XAMPP/js/header.js"></script>
     
 </body>
 </html>
