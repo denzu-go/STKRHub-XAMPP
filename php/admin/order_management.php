@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STKRHUB-ADMIN </title>
+    <title>STKRHUB-ORDER_MANAGEMENT </title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <style>
-      @import url(../css/header.css);
-      @import url(../css/subnav.css);
+      @import url(/STKRHUB-XAMPP/css/header.css);
+      @import url(/STKRHUB-XAMPP/css/footer.css);
     </style>
 </head>
 <body>
@@ -17,15 +17,16 @@
 <my-header></my-header>
 
 <div class="container my-5">
-    <h2>List of Clients</h2>
+    <h2>Customer Order Management</h2>
     <br>
     <table class="table">
         <thead>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Username</th>
+            <th>Order ID</th>
+            <th>Product ID</th>
+            <th>Address ID</th>
+            <th>Order Price</th>
+            <th>Order Quanitity</th>
+            <th>Order Status</th>
         </thead>
         <tbody>
             <?php
@@ -41,7 +42,7 @@
                 die("Connection Failed: " . $connection -> connect_error);
             }
 
-            $sql = "SELECT * FROM user";
+            $sql = "SELECT * FROM orders";
             $result = $connection -> query($sql);
 
             if(!$result) {
@@ -51,13 +52,15 @@
             while($row = $result->fetch_assoc()){
                 echo "
                 <tr>
-                <td>$row[user_id]</td>
-                <td>$row[first_name]</td>
-                <td>$row[last_name]</td>
-                <td>$row[email]</td>
-                <td>$row[username]</td>
+                <td>$row[order_id]</td>
+                <td>$row[product_id]</td>
+                <td>$row[address_id]</td>
+                <td>$row[order_price]</td>
+                <td>$row[order_quantity]</td>
+                <td>$row[order_status]</td>
                 <td>
-                    <a class='btn btn-danger btn-sm'href='/STKRHUB-XAMPP/php/delete.php?user_id=$row[user_id]'>Delete</a>
+                <a class='btn btn-primary btn-sm'href='/STKRHUB-XAMPP/php/admin/edit-order.php?order_id=$row[order_id]'>Edit</a>
+                    <a class='btn btn-danger btn-sm'href='/STKRHUB-XAMPP/php/admin/delete-order.php?order_id=$row[order_id]'>Delete</a>
                 </td>
             </tr>
                 ";

@@ -1,6 +1,6 @@
 <?php
-if ( isset($_GET["user_id"])) {
-    $user = $_GET["user_id"];
+if ( isset($_GET["order_id"])) {
+    $user = $_GET["order_id"];
 
     $servername = "localhost:3307";
     $username = "root";
@@ -11,10 +11,10 @@ if ( isset($_GET["user_id"])) {
     //Para maka conenct DB
     $connection = new mysqli($servername, $username, $password, $database);
 
-    $sql = "DELETE FROM user WHERE user_id=$user";
+    $sql = "DELETE FROM orders WHERE order_id=$user";
     $connection->query($sql);
 
 }
-header("location: /STKRHUB-XAMPP/php/admin.php");
+header("location: /STKRHUB-XAMPP/php/admin/order_management.php");
 exit;
 ?>
