@@ -82,6 +82,34 @@ if (isset($_SESSION["user_id"])) {
             background: linear-gradient(180deg, rgba(15,16,32,1) 0%, rgba(22,24,48,1) 37%);
         }
 
+        .container-main{
+      background: linear-gradient(180deg, rgba(15,16,32,1) 0%, rgba(22,24,48,1) 37%);
+      color: #fff;
+      height: 700px;
+}
+
+.container-main h1{
+    padding: 60px 150px;
+    padding-bottom: 10px;
+}
+
+.container-main p{
+    padding-left: 150px;
+    width: 80%;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.container-main .subp{
+    padding-left: 150px;
+    width: 80%;
+    text-align: justify;
+    padding-bottom: 30px;
+    opacity: 0.5;
+}
+
+        
+
 
     </style>
 </head>
@@ -95,8 +123,21 @@ if (isset($_SESSION["user_id"])) {
         <main>
             
             <div class="container-main">
-                <!-- all mc code -->
+            <h1>About STKR Hub</h1>
+        <p>Lorem ipsum dolor sit amet. Qui cumque nulla ex voluptas veniam non illum eaque qui laborum tenetur est aspernatur laudantium et quasi perspiciatis. Ex reprehenderit perspiciatis ea Quis dolorum ex nihil voluptas est voluptas aliquid.
+            Et illum cupiditate aut iusto possimus ex nulla sunt ut magnam soluta ab voluptatem velit non itaque officiis et corrupti sint? Aut autem dolorum est saepe dolor ut autem pariatur hic nobis quas et accusantium excepturi.
+            Et distinctio autem ea cupiditate omnis ea sequi labore quo totam libero et reprehenderit sapiente et eveniet reprehenderit. Aut consequatur possimus qui facere galisum hic iusto galisum eos dolor voluptate rem nisi illo cum dignissimos modi aut autem voluptatem.</p>
+
+            <p class="subp">Lorem ipsum dolor sit amet. Qui cumque nulla ex voluptas veniam non illum eaque qui laborum tenetur est aspernatur laudantium et quasi perspiciatis. Ex reprehenderit perspiciatis ea Quis dolorum ex nihil voluptas est voluptas aliquid.
+                Et illum cupiditate aut iusto possimus ex nulla sunt ut magnam soluta ab voluptatem velit non itaque officiis et corrupti sint? Aut autem dolorum est saepe dolor ut autem pariatur hic nobis quas et accusantium excepturi.
+                Et distinctio autem ea cupiditate omnis ea sequi labore quo totam libero et reprehenderit sapiente et eveniet reprehenderit. Aut consequatur possimus qui facere galisum hic iusto galisum eos dolor voluptate rem nisi illo cum dignissimos modi aut autem voluptatem.</p>
+
+                <p class="subp">Lorem ipsum dolor sit amet. Qui cumque nulla ex voluptas veniam non illum eaque qui laborum tenetur est aspernatur laudantium et quasi perspiciatis. Ex reprehenderit perspiciatis ea Quis dolorum ex nihil voluptas est voluptas aliquid.
+                    Et illum cupiditate aut iusto possimus ex nulla sunt ut magnam soluta ab voluptatem velit non itaque officiis et corrupti sint? Aut autem dolorum est saepe dolor ut autem pariatur hic nobis quas et accusantium excepturi.
+                    Et distinctio autem ea cupiditate omnis ea sequi labore quo totam libero et reprehenderit sapiente et eveniet reprehenderit. Aut consequatur possimus qui facere galisum hic iusto galisum eos dolor voluptate rem nisi illo cum dignissimos modi aut autem voluptatem.</p>
             </div>
+
+            
 
         </main>
 
