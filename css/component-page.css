@@ -1,0 +1,447 @@
+@import url(/STKRHub-XAMPP/css/header.css);
+@import url(/STKRHub-XAMPP/css/footer.css);
+@import url(/STKRHub-XAMPP/css/subnav.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    width: 100%;
+} 
+
+label{
+    color: #fff;
+}
+
+/* main CSS -----------------------------------------------------------------------------*/
+main{
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+    
+    background: rgb(15,16,32);
+    background: linear-gradient(180deg, rgba(15,16,32,1) 0%, rgba(22,24,48,1) 37%);
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+    width: 1200px;
+
+    margin: 40px auto;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    height: 473px;
+    width: 1200px;
+}
+
+.box1{
+    width: 377px;
+    height: 100%;
+
+}
+
+.box2{
+    width: 270px;
+    height: 100%;
+}
+
+.box2 a{
+    color: white;
+}
+
+.box3{
+    width: 377px;
+    height: 100%;
+}
+
+.box1{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+}
+
+.big-pic{
+
+    width: 377px;
+    height: 388px;
+}
+
+.big-pic img{
+
+    width: 377px;
+    height: 388px;
+    border-radius: 7px;
+}
+
+.pics{
+    position: absolute;
+    bottom: 0;
+
+    display: flex; 
+    justify-content: center;
+
+    width: 377px;
+    height: 68px;
+
+    gap: 15px;
+
+    cursor: pointer;
+}
+
+.smallPic:active{
+    border: 2px solid #15172E;
+}
+
+.smallPic{
+    width: 68px;
+    height: 68px;
+    border-radius: 7px;
+}
+/* end of main CSS --------------------------*/
+
+
+/* table -----------------------------*/
+table.GeneratedTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+    color: #ffffff;
+    opacity: .60;
+
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 14px;
+}
+  
+table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
+    padding: 14px;
+
+    text-align: center;
+}
+
+.quality{
+    width: 135px;
+}
+
+.price{
+    width: 135px;
+}
+/* end of table -----------------------------*/
+
+
+/* box3 -------------------------------------*/
+.component-name{
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    padding-bottom: 10px;
+}
+
+.box3{
+    position: relative;
+}
+
+.steps-custom{
+    font-family: 'SF Compact Display', sans-serif;
+    width: 380px;
+    line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #272A4E;
+    color: #fff;
+}
+
+
+
+
+
+.line-a, .line-b{
+    width: 377px;
+    height: 44px;
+    border-bottom: 2px solid #24263d;
+
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'SF Pro Display', sans-serif;
+
+    width: 377px;
+    height: 50px;
+
+    margin-bottom: 11px;
+
+}
+
+.add-to-cart{
+    width: 377px;
+    height: 50px;
+}
+
+.selections{
+    position: absolute;
+    margin-top: 50px;
+
+}
+/* end of box3 -------------------------------------*/
+
+
+/* total cost */
+.total-cost{
+    
+    display: flex;
+    justify-content: flex-end;
+    color: #c8c8c8;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+#total-cost{
+    font-size: 23px;
+    color: #22D7FF;
+}
+
+
+
+/* add to cart ----------------------------*/
+.add-to-cart{
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    color: #fff;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 300%;
+    border-radius: 7px;
+    z-index: 1;
+}
+  
+.add-to-cart:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+  
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+}
+  
+.add-to-cart:before {
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.add-to-cart:hover::before {
+    filter: blur(10px);
+}
+  
+.add-to-cart:active {
+    background: linear-gradient(32deg,#ffffff,#ffffff,#ffffff, #ffffff);
+    /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+}
+
+/* end of add to cart ----------------------------*/
+
+
+/* input-stepper -----------------------------------*/
+
+.quantity-text{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    margin-right: 15px;
+}
+
+
+.btn-default{
+    color: #979797;
+    font-size: 14px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    width: 25px;
+    height: 25px;
+    border: 2px solid #272a4e;
+}
+
+
+.text-center{
+    color: #282828;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    width: 100px;
+    text-align: center;
+
+    border: 2px solid #272a4e;
+    border-radius: 7px;
+
+    height: 50px;
+}
+
+.quantity-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* end of input-stepper -----------------------------------*/
+.line-a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: #fff;
+}
+
+.line-a p{
+    opacity: .50;
+}
+
+.line-b{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    color: #fff;
+}
+
+
+
+/* mid specs and need help -------------------------------------------------*/
+.mid{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 70px;
+
+    height: auto;
+
+    color: #c2c2c2;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.spec-text{
+    width: 727px;
+    line-height: 2;
+
+    padding: 30px;
+    background-color: #272A4E;
+}
+
+
+.specs ul li{
+    list-style: disc ;
+    list-style-position: inside;
+}
+
+.help-text{
+    width: 300px;
+    line-height: 2;
+    padding: 30px;
+    background-color: #272A4E;
+}
+/* end of mid specs and need help -------------------------------------------------*/
+
+/* low --------------------------*/
+.low{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 70px;
+
+    height: auto;
+
+    color: #c2c2c2;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.low-text{
+    display: flex;
+    justify-content: center;
+
+    width: 727px;
+
+    padding: 20px;
+    background-color: #272A4E;
+}
+
+
+.low-text ul{
+    list-style: none;
+    list-style-position: inside;
+    display: flex;
+    gap: 30px;
+}
+
+.null{
+    width: 300px;
+}
+
+i{
+    font-size: 25px;
+    color: #c2c2c2;
+}
+
+.follow{
+    padding-bottom: 20px;
+}
+
+.help ul li{
+    list-style: none;
+}

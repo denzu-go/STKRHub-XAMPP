@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Game Pawns</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="" />
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image" href="/STKRHub-XAMPP/img/logo.png" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/akira-expanded"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-compact-display"
+      rel="stylesheet"
+    />
+
+    <!-- for text-spinner -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <style>
+      @import url(/STKRHub-XAMPP/css/header.css);
+      @import url(/STKRHub-XAMPP/css/footer.css);
+      @import url(/STKRHub-XAMPP/css/subnav.css);
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+      }
+
+      .body {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+
+        margin-top: 40px;
+        margin-bottom: 120px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      label {
+        color: #fff;
+      }
+
+      /* main CSS -----------------------------------------------------------------------------*/
+      main {
+        display: flex;
+        justify-content: center;
+
+        min-height: 100vh;
+
+        background: rgb(65, 70, 119);
+        background: linear-gradient(
+          180deg,
+          rgba(65, 70, 119, 1) 0%,
+          rgba(29, 32, 62, 1) 100%
+        );
+      }
+
+      .container-main {
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+        width: 1200px;
+
+        margin: 40px auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #fff;
+        font-family: "SF Pro Display", sans-serif;
+      }
+
+      p {
+        color: #fff;
+        font-family: "Lato";
+        font-size: 13px;
+        opacity: 0.5;
+      }
+
+      .content {
+        display: flex;
+        gap: 40px;
+      }
+
+      .section-box1 {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        height: 250px;
+
+        gap: 10px;
+      }
+
+      .section-box-pic {
+        width: 270px;
+        height: 250px;
+      }
+
+      .section-box-pic img {
+        width: 270px;
+        height: 250px;
+        border-radius: 7px;
+
+        box-shadow: 1px 14px 50px -1px rgba(0, 0, 0, 0.77);
+      }
+
+      .section-box-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <my-header></my-header>
+
+      <!-- <my-subnav></my-subnav> -->
+
+      <main>
+        <div class="container-main">
+          <h2 class="component-name" id="component-name">Pawns</h2>
+
+          <div class="body">
+            <div class="content">
+              <a href="#">
+                <div class="section-box1">
+                  <div class="section-box-pic">
+                    <img
+                      src="/STKRHub-XAMPP/img/STKRHUB/GAME-PIECES/Game Pawns/Wooden Pawns 12mmx12mm/Wooden Pawns 12mmx12mm.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="section-box-text">
+                    <h3>Wooden Pawns</h3>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="section-box1">
+                  <div class="section-box-pic">
+                    <img
+                      src="/STKRHub-XAMPP/img/STKRHUB/GAME-PIECES/Game Pawns/Small Headed Wooden Pawn/Small Headed Wooden Pawn.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="section-box-text">
+                    <h3>Small Headed Wooden Pawn</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <my-footer></my-footer>
+    </div>
+
+    <script src="/STKRHub-XAMPP/js/header.js"></script>
+    <script src="/STKRHub-XAMPP/js/subnav.js"></script>
+    <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script></script>
+  </body>
+</html>
