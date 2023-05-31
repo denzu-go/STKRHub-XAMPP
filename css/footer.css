@@ -1,0 +1,112 @@
+
+/* footer ------------------------------------------------------*/
+footer{
+    background-color: #272A4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 507px;
+
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+
+    position: sticky;
+    top: 100%;
+}
+
+.footer-container{
+    position: relative;
+    width: 1053px;
+    height: 290px;
+}
+
+footer ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* /////////////////////////////////////// */
+.socials{
+    margin-bottom: 17px;
+}
+
+.socials ul, .socials i{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: #ccc;
+}
+
+.socials ul, .socials a{
+    text-decoration: none;
+}
+
+.main-footer{
+    display: flex;
+    margin-bottom: 17px;
+    gap: 168px;
+}
+
+
+/* ///////////////////////////////// */
+.f-left{
+    display: flex;
+
+    margin-bottom: 17px;
+    gap: 50px;
+    line-height: 1.4;
+}
+
+.f-left a{
+    text-decoration: none;
+    color: #e7e7e7;
+}
+
+.fset1{
+
+}
+
+.fset2{
+
+}
+
+.fset3{
+
+}
+
+.fset4{
+
+}
+
+.f-right{
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 184px;
+    height: 90px;
+}
+
+.flow{
+    color: #cccccc;
+    margin-bottom: 17px
+}
+
+/* /////////////////////////////////////////// */
+.fdown ul{
+    display: flex;
+    gap: 20px;
+}
+
+.fdown a{
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+
+/* end of footer ------------------------------------------------------*/

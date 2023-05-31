@@ -23,45 +23,111 @@ $is_invalid = false;
 
             $_SESSION["user_id"] = $user["user_id"];
 
-            header("Location: index.php");
+            header("Location: ../index.php");
             exit;
         }
     }
 
     $is_invalid = true;
- }
+
+}
+
 ?>
+
+
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+<html lang="en">
+
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/login.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image" href="../img/logo.png">
+
+    <!-- title -->
+    <title>Login and Signup</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
 </head>
 
-            <body>
-                <h1> Login</h1>
+<body>
+    <div class="container" id="container">
+        <!-- Sign Up -->
+        <div class="form-container register-container">
+            <form action="process_signup.php" method="post" novalidate>
+                <h1>Sign Up here</h1>
+
+                <input type="text" name="first_name" placeholder="First Name">
+
+                <input type="text" name="last_name" placeholder="Last Name">
+
+                <input type="email" name="email" placeholder="Email">
+
+                <input type="text" name="username" placeholder="Username">
+
+                <input type="password" name="password" placeholder="Password">
+
+                <input type="password" name="confirm_password" placeholder="Confirm Password">
+
+                <button type="submit" value="signup">Signup</button><br>
+
+            </form>
+        </div>
+
+        <!-- Login -->
+        <div class="form-container login-container">
+            <form method="post">
+                <h1>Login here</h1>
 
                 <?php if ($is_invalid): ?>
-                    <em?> Username or Password does not exist </em>
-                <?php endif; ?>
+                <em?> Username or Password does not exist </em>
+                    <?php endif; ?>
 
-                <form method = "post">
+                <input type="text" name="username" value="<?= htmlspecialchars($_POST["username"] ?? "") ?>" placeholder="Username">
 
-                    <label for = "username"> Username </label>
-                    <input type = "text" name = "username" 
-                    value = "<?= htmlspecialchars($_POST["username"] ?? "") ?>"> <br>
-                    
-                    <label for = "password"> Password </label>
-                    <input type = "password" name = "password"> <br>
-                    
-                    <input type = "submit" value ="login"> <br>
-                    
-                    <a href = "signup.php"> signup </a>
-        
-                 </form>
+                <input type="password" name="password" placeholder="Password">
 
-            </body>
-    </html>
+                <button type="submit" value="login">Login</button>
+
+            </form>
+        </div>
+
+        <!-- Overlay (ghost) -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1 class="title">Hello <br> friends</h1>
+                    <p>if Yout have an account, login here and have fun</p>
+                    <button class="ghost" id="login">Login
+                        <i class="lni lni-arrow-left login"></i>
+                    </button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h1 class="title">Start your <br> journy now</h1>
+                    <p>if you don't have an account yet, join us and start
+                        your journey.</p>
+                    <button class="ghost" id="register">Register
+                        <i class="lni lni-arrow-right register"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Login/signup js script -->
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
+
