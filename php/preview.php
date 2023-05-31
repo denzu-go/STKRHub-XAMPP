@@ -14,6 +14,7 @@ $price = isset($_SESSION['price']) ? $_SESSION['price'] : 0;
 $size = isset($_SESSION['size']) ? $_SESSION['size'] : 0;
 $qty = isset($_SESSION['qty']) ? $_SESSION['qty'] : 0;
 
+
 $mysqli = require __DIR__ . "/database.php";
 
 $sql = "SELECT * FROM products
@@ -26,6 +27,9 @@ if (!$result){
 }
 
 $product = $result->fetch_assoc();
+
+
+
 
 ?>
 
@@ -57,7 +61,7 @@ $product = $result->fetch_assoc();
 
     <h1>Details</h1>
     
-    <form id="addressForm" method="post" action="order.php">
+    <form id="addressForm" method="post" action="order_process.php">
 
 
 

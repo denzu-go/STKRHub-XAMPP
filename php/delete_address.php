@@ -32,7 +32,8 @@ if (isset($_POST['id']) && !empty($_POST['id'])) {
 
         // Check if any rows were affected by the deletion
         if ($statement->affected_rows > 0) {
-            echo "Data deleted successfully.";
+           header("Location: preview.php");
+           exit;
         } else {
             echo "No data found with the provided address ID.";
         }

@@ -106,6 +106,16 @@ $mysqli = require __DIR__ . "/database.php";
                 exit;
             }
 
+            if (isset($_POST['addtocart'])) {
+
+                $_SESSION['product_id'] = $product_id;
+                $_SESSION['price'] = $price;
+                $_SESSION['size'] = $size;
+                $_SESSION['qty'] = $qty2;
+                header('Location: cart_process.php');
+                exit;
+            }
+
 
             
            
