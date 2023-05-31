@@ -1,0 +1,166 @@
+@import url(/STKRHub-XAMPP/css/header.css);
+@import url(/STKRHub-XAMPP/css/footer.css);
+@import url(/STKRHub-XAMPP/css/subnav.css);
+@import url(/STKRHub-XAMPP/css/make-table.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    width: 100%;
+} 
+
+/* main CSS -----------------------------------------------------------------------------*/
+main{
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+    
+    background: rgb(15,16,32);
+    background: linear-gradient(180deg, rgba(15,16,32,1) 0%, rgba(22,24,48,1) 37%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-main{
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* cost */
+.upper{
+
+
+    width: 830px;
+    padding-bottom: 90px;
+    
+}
+
+.upper-content{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    right: 0;
+}
+
+.total-cost, .total-cost h3{
+    color: #c8c8c8;
+    font-family: 'Lato';
+    font-size: 20px;
+
+}
+
+#total-cost{
+    color: #22D7FF;
+}
+
+/* add to cart */
+
+.add-to-cart{
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    color: #fff;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 300%;
+    border-radius: 7px;
+    z-index: 1;
+}
+  
+.add-to-cart:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+  
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+}
+  
+.add-to-cart:before {
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.add-to-cart:hover::before {
+    filter: blur(10px);
+}
+  
+.add-to-cart:active {
+    background: linear-gradient(32deg,#ffffff,#ffffff,#ffffff, #ffffff);
+    /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+}
+
+/* end of add to cart ----------------------------*/
+
+
+
+/* title */
+.title-of-section{
+    display: flex;
+    align-items: center;
+
+    width: 1000px;
+
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+
+    color: #CDABFF;
+    border-bottom: 1px solid #c8c8c8;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    margin-bottom: 20px;    
+    margin-top: 20px;
+}
+
+.title{
+    width: 300px;
+}
+
+.description{
+    font-family: 'Lato';
+    font-size: 10px;
+    font-weight: 100;
+    color: #c8c8c8;
+}
+
+#description{
+    font-size: 10px;
+}
+

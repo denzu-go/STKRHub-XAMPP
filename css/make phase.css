@@ -1,0 +1,398 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+@import url(../css/subnav.css);
+@import url(../css/make-table.css);
+
+
+
+
+.side-right ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.side-right ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #fff;
+    list-style-type: none;
+
+    padding-left: 30px;
+
+    width: calc(290px - 60px);
+    height: 40px;
+
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container-active{
+    background-color: #272a4e;
+}
+
+
+/* body --------------------------------------*/
+.container-body{
+    
+
+    width: 100%;
+    height: 650px;
+    overflow-y: scroll;
+
+    background: linear-gradient(183deg, rgba(65,70,119,1) 0%, rgba(29,32,62,1) 100%);
+
+    padding: 30px;
+}
+
+
+p.description{
+    font-family: 'Lato';
+    font-size: 10px;
+    font-weight: 100;
+    color: #c8c8c8;
+}
+
+/* content */
+.content{
+    display: flex;
+    justify-content:space-between;
+
+    width: 1100px;
+    height: auto;
+}
+
+
+.total-cost, .total-cost h3{
+    color: #c8c8c8;
+    font-family: 'Lato';
+    font-size: 25px;
+
+    padding-top: 30px;
+}
+
+#total-cost{
+    color: #22D7FF;
+}
+
+.add-to-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 60px;
+    background-color: #24BA60;
+    border-radius: 7px;
+
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+.add-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 47px;
+    background-color: #6E58AC;
+    border-radius: 7px;
+
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+
+
+/* change name of project name */
+.input-text {
+    width: 830px;
+    height: 37px;
+    font: 'Lato';
+    font-size: 14px;
+
+    padding: 10px;
+    border-width: 1px;
+    border-color: #858585;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 7px;
+
+}
+.input-text:focus {
+    outline:none;
+}
+/* END of change of project name */
+
+
+
+/* add to cart */
+.add-to-cart{
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    color: #fff;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 300%;
+    border-radius: 7px;
+    z-index: 1;
+}
+  
+.add-to-cart:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+  
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+}
+  
+.add-to-cart:before {
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.add-to-cart:hover::before {
+    filter: blur(10px);
+}
+  
+.add-to-cart:active {
+    background: linear-gradient(32deg,#ffffff,#ffffff,#ffffff, #ffffff);
+    /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+}
+
+/* end of add to cart ----------------------------*/
+
+
+
+
+/* change project name */
+.submit{
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    color: #fff;
+    width: 178px;
+    height: 37px;
+
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 300%;
+    border-radius: 7px;
+    z-index: 1;
+}
+  
+.submit:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+  
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+}
+  
+.submit:before {
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.submit:hover::before {
+    filter: blur(10px);
+}
+  
+.submit:active {
+    background: linear-gradient(32deg,#ffffff,#ffffff,#ffffff, #ffffff);
+    /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+}
+
+/* end of change project name ----------------------------*/
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+
+    background: rgb(15, 16, 32);
+    background: linear-gradient(
+      180deg,
+      rgba(15, 16, 32, 1) 0%,
+      rgba(22, 24, 48, 1) 37%
+    );
+  }
+
+  .sidemenu {
+    display: flex;
+
+    background: linear-gradient(
+      157deg,
+      rgba(119, 88, 210, 1) 0%,
+      rgba(217, 176, 243, 1) 100%
+    );
+
+    width: 290px;
+    height: 650px;
+  }
+
+  .side-left {
+    position: relative;
+
+    width: 87px;
+    height: 100%;
+
+    background-color: rgba(29, 32, 62, 0.3);
+  }
+
+  .side-right {
+    background-color: rgba(44, 47, 72, 0.5);
+  }
+  .side-right a {
+    color: #fff;
+    font-family: "Lato";
+  }
+
+  .side-right nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .container-a {
+    display: flex;
+    width: 210px;
+    gap: 7px;
+
+    padding: 10px;
+    margin: -20px;
+
+    align-items: center;
+
+    border-radius: 7px;
+
+  }
+
+  .container-a i {
+    padding-left: 10px;
+  }
+
+  /* FIXME:FIXME:FIXME:FIXME: */
+  .body {
+    height: 650px;
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+
+  .container-body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* title */
+  .title-of-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    font-family: "SF Compact Display", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+
+    color: #cdabff;
+    border-bottom: 1px solid #c8c8c8;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 20px;
+  }
+
+
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 230px;
+    height: auto;
+  }
+
+  #total-cost {
+    color: #22d7ff;
+  }
+
+
+
+.side-left img{
+  width: 90%;
+
+  position: absolute;
+  right: 0;
+}

@@ -51,38 +51,279 @@ if (isset($_SESSION["user_id"])) {
         @import url(/STKRHub-XAMPP/css/footer.css);
         @import url(/STKRHub-XAMPP/css/subnav.css);
 
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body{
+        body {
             width: 100%;
         }
 
-        /* main CSS */
-        .title {
+        h1, h2, h3, h4, h5, h6{
             color: #fff;
-            font-size: 20px;
-            font-weight: 700;
-            font-family: 'SF Pro Display', sans-serif;
-            background-color: rgb(65, 70, 119);
-            padding: 20px 200px 10px;
+            font-family: 'SF Compact Display', sans-serif;
         }
 
-        main{
+        /* main CSS -----------------------------------------------------------------------------*/
+        main {
             display: flex;
             justify-content: center;
 
             min-height: 100vh;
 
-            height: 100%;
-            background: rgb(15,16,32);
-            background: linear-gradient(180deg, rgba(15,16,32,1) 0%, rgba(22,24,48,1) 37%);
+            background: rgb(15, 16, 32);
+            background: linear-gradient(180deg, rgba(15, 16, 32, 1) 0%, rgba(22, 24, 48, 1) 37%);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-main {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
 
 
+        /* cost */
+        .upper {
+
+
+            width: 830px;
+            padding-bottom: 90px;
+
+        }
+
+        .upper-content {
+            position: absolute;
+
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            right: 0;
+        }
+
+        .total-cost,
+        .total-cost h3 {
+            color: #c8c8c8;
+            font-family: 'Lato';
+            font-size: 20px;
+
+        }
+
+        #total-cost {
+            color: #22D7FF;
+        }
+
+        /* add to cart */
+
+        .add-to-cart {
+            text-decoration: none;
+            position: relative;
+            border: none;
+            font-size: 17px;
+            font-family: 'SF Pro Display', sans-serif;
+            font-weight: 500;
+
+            color: #fff;
+            width: 100%;
+            line-height: 2em;
+            text-align: center;
+            background: linear-gradient(90deg, #b85fe8, #28dbe5, #3a88e6, #b85fe8);
+            background-size: 300%;
+            border-radius: 7px;
+            z-index: 1;
+        }
+
+        .add-to-cart:hover {
+            animation: ani 8s linear infinite;
+            border: none;
+        }
+
+        @keyframes ani {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 400%;
+            }
+        }
+
+        .add-to-cart:before {
+            content: '';
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            z-index: -1;
+            position: absolute;
+            background: linear-gradient(90deg, #b85fe8, #28dbe5, #3a88e6, #b85fe8);
+            background-size: 400%;
+            border-radius: 10px;
+            transition: 1s;
+        }
+
+        .add-to-cart:hover::before {
+            filter: blur(10px);
+        }
+
+        .add-to-cart:active {
+            background: linear-gradient(32deg, #ffffff, #ffffff, #ffffff, #ffffff);
+            /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+        }
+
+        /* end of add to cart ----------------------------*/
+
+
+
+        /* title */
+        .title-of-section {
+            display: flex;
+            align-items: center;
+
+            width: 1000px;
+
+            font-family: 'SF Compact Display', sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+
+            color: #CDABFF;
+            border-bottom: 1px solid #c8c8c8;
+
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .title {
+            width: 300px;
+        }
+
+        .description {
+            font-family: 'Lato';
+            font-size: 10px;
+            font-weight: 100;
+            color: #c8c8c8;
+        }
+
+        #description {
+            font-size: 10px;
+        }
+
+        /* change name of project name */
+        .input-text {
+            width: 830px;
+            height: 37px;
+            font: 'Lato';
+            font-size: 14px;
+
+            padding: 10px;
+            border-width: 1px;
+            border-color: #858585;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-style: solid;
+            border-radius: 7px;
+
+        }
+
+        .input-text:focus {
+            outline: none;
+        }
+
+        /* END of change of project name */
+
+
+        /* change project name */
+        .submit {
+            text-decoration: none;
+            position: relative;
+            border: none;
+            font-size: 14px;
+            font-family: 'SF Pro Display', sans-serif;
+            font-weight: 500;
+
+            cursor: pointer;
+
+            color: #fff;
+            width: 178px;
+            height: 37px;
+
+            line-height: 2em;
+            text-align: center;
+            background: linear-gradient(90deg, #b85fe8, #28dbe5, #3a88e6, #b85fe8);
+            background-size: 300%;
+            border-radius: 7px;
+            z-index: 1;
+        }
+
+        .submit:hover {
+            animation: ani 8s linear infinite;
+            border: none;
+        }
+
+        @keyframes ani {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 400%;
+            }
+        }
+
+        .submit:before {
+            content: '';
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            z-index: -1;
+            position: absolute;
+            background: linear-gradient(90deg, #b85fe8, #28dbe5, #3a88e6, #b85fe8);
+            background-size: 400%;
+            border-radius: 10px;
+            transition: 1s;
+        }
+
+        .submit:hover::before {
+            filter: blur(10px);
+        }
+
+        .submit:active {
+            background: linear-gradient(32deg, #ffffff, #ffffff, #ffffff, #ffffff);
+            /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+        }
+
+        /* end of change project name ----------------------------*/
+
+        .mycreations-pic{
+            margin-top: 200px;
+            margin-left: 470px;
+        }
+
+        
     </style>
 </head>
 
@@ -93,11 +334,42 @@ if (isset($_SESSION["user_id"])) {
 
         <!-- main -->
         <main>
-            
             <div class="container-main">
-                <!-- all mc code -->
-            </div>
+                <div class="title-of-section">
+                    <div class="title">
+                        <p>Creation</p>
+                    </div>
+                    <div class="description">
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt tempora earum quaerat officiis fuga assumasdasdenda ipsa suscipit libero unde!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt tempora earum quaerat officiis fuga assumasdasdenda ipsa suscipit libero unde!</p>
+                    </div>
+                </div>
 
+                <div class="body">
+                    <div class="content">
+                        <br>
+                        <div class="create">
+                            <h2>Create a Game</h2>
+                            <div class="content">
+                                <form action="" method="post">
+                                    <input class="input-text" type="text" name="" placeholder="project name" />
+                                    <a href="#">
+                                        <input type="submit" class="submit" value="Create" />
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="my-creations">
+                            <img src="/STKRHub-XAMPP/img/mycreations.png" alt="" class="mycreations-pic" width="50%">
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="my-creations"></div>
+                    </div>
+                </div>
+
+            </div>
         </main>
 
         <my-footer></my-footer>
