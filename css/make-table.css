@@ -1,0 +1,164 @@
+/* table */
+.components-table{
+    width: 830px;
+    height: auto;
+    
+}
+
+    .table-header{
+        display: flex;
+
+        width: 100%;
+        height: 50px;
+        background-color: #1E213F;
+
+        border-top: 1px solid #6b6e96;
+        border-bottom: 1px solid #6b6e96;
+
+        color: #ffffff;
+        font-family: 'Lato';
+        font-size: 15px;
+    }
+
+        .table-delete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-right: 1px solid #6b6e96;
+
+            width: 10%;
+            height: 50px;
+            
+        }
+
+        .table-components{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-right: 1px solid #6b6e96;
+
+            width: 60%;
+            height: 50px;
+            
+        }
+
+        .table-quantity{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-right: 1px solid #6b6e96;
+
+            width: 15%;
+            height: 50px;
+            
+        }
+
+        .table-cost{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 15%;
+            height: 50px;
+            
+        }
+
+
+    .table-content{
+        display: flex;
+
+        width: 100%;
+        height: 50px;
+
+        border-bottom: 1px solid #6b6e96;
+
+
+        color: #ffffff;
+        font-family: 'Lato';
+        font-size: 15px;
+    }
+
+        .content-delete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-right: 1px solid #6b6e96;
+
+            width: 10%;
+            height: 50px;
+        }
+
+            .content-delete input{
+                width: 20px;
+                height: 20px;
+            }
+
+        .content-components{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+
+            border-right: 1px solid #6b6e96;
+
+            color: #fff;
+            width: 60%;
+            height: 50px;
+            
+        }
+
+            .file-name{
+                font-size: 16px;
+            }
+
+            .component-name{
+                font-size: 13px;
+            }
+
+        .content-quantity{
+            display: flex;
+            align-items: center;
+
+            border-right: 1px solid #6b6e96;
+
+            width: 15%;
+            height: 50px;
+            
+        }
+
+        .content-cost{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 15%;
+            height: 50px;
+            
+        }
+
+
+/* quantity */
+.content-quantity{
+    display: flex;
+    justify-content: center;
+}
+
+.component-quantity{
+
+    color: #282828;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    width: 100px;
+    text-align: center;
+
+    border: 2px solid #272a4e;
+    border-radius: 7px;
+
+    height: 40px;
+}
