@@ -1,6 +1,6 @@
 <?php
 if ( isset($_GET["product_id"])) {
-    $user = $_GET["product_id"];
+    $products = $_GET["product_id"];
 
     $servername = "localhost:3307";
     $username = "root";

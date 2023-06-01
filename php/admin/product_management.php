@@ -18,7 +18,7 @@
 
 <div class="container my-5">
     <h2>List of PRODUCTS</h2>
-    <a class='btn btn-primary btn-sm'href='/STKRHUB-XAMPP/php/admin/create-product.php?product_id=$row[product_id]'>add new Product</a><br>
+    <a class='btn btn-primary btn-sm'href='/STKRHUB-XAMPP/php/admin/create_product.php'>add new Product</a><br>
 
     <br>
     <table class="table">

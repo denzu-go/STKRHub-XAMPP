@@ -51,14 +51,19 @@ if (isset($user)) {
     <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/sf-compact-display" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <my-header></my-header>
-            
+
         <main>
+            <div>
+                        
             <div class="container-main">
+                
                 <div class="title-of-section">
                     <div class="title">
                         <p>My Cart</p>
@@ -67,48 +72,82 @@ if (isset($user)) {
                         <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt tempora earum quaerat officiis fuga assumasdasdenda ipsa suscipit libero unde!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt tempora earum quaerat officiis fuga assumasdasdenda ipsa suscipit libero unde!</p>
                     </div>
                 </div>
-            </div>
+                
 
-            <h1>Cart</h1>
+                <form method="POST" action="cart_preview.php">
+                    
+                    <div class="table-header">
+                        <div class="table-delete">
+                            Select
+                        </div>
 
-            <form method="POST" action="cart_preview.php">
-                <table>
-                    <tr>
-                        <td>Select</td>
-                        <td>Product</td>
-                        <td>Description</td>
-                        <td>Quantity</td>
-                        <td>Price</td>
+                        <div class="table-components">
+                            Product
+                        </div>
 
-                    </tr>
+                        <!--                                     
+                                    <td>Description</td> -->
+
+                        <div class="table-quantity">
+                            Quantity
+                        </div>
+
+                        <div class="table-cost">
+                            Price
+                        </div>
+                    </div>
 
                     <?php foreach ($cartItems as $row) { ?>
-                        <tr>
-                            <td>
-                                <input type="checkbox" name="selectedIds[]" value="<?= $row['cart_id'] ?>" />
-                            </td>
-                            <td><?= $row['product_name'] ?></td>
-                            <td><?= $row['product_description'] ?></td>
-                            <td>
-                                <input id="cart-quantity-<?= $row['cart_id'] ?>" type="number" class="form-control text-center cart-quantity" value="<?= $row['cart_quantity'] ?>" min="1" max="99" onchange="updateCartPrice(<?= $row['cart_id'] ?>, <?= $row['product_price'] ?>)" />
-                            </td>
-                            <td id="cart-price-<?= $row['cart_id'] ?>"><?= $row['cart_price'] ?></td>
 
-                        </tr>
+
+                    <!-- TABLE CONTENT -->
+                    <div class="table-content">
+                        <!-- delete -->
+                        <div class="content-delete">
+                            <input type="checkbox" name="selectedIds[]" value="<?= $row['cart_id'] ?>" />
+                        </div>
+
+                        <!-- product name -->
+                        <div class="content-components">
+                            <div class="file-name" id="order">
+                                <?= $row['product_name'] ?>
+                            </div>
+                        </div>
+
+
+                        <!-- quantity -->
+                        <div class="content-quantity">
+                            <input id="cart-quantity-<?= $row['cart_id'] ?>" type="number" class="form-control text-center cart-quantity" value="<?= $row['cart_quantity'] ?>" min="1" max="99" onchange="updateCartPrice(<?= $row['cart_id'] ?>, <?= $row['product_price'] ?>)" />
+                        </div>
+
+
+                        <!-- price -->
+                        <div class="content-cost">
+                            <div id="cart-price-<?= $row['cart_id'] ?>"><?= $row['cart_price'] ?></div>
+                        </div>
+
+                    </div>
+
                     <?php } ?>
+            </div>
+            
 
-                </table>
+            <button class="add-to-cart" type="submit">Checkout</button>
 
-                <button type="submit">Submit</button>
             </form>
-        </main>
 
-        <my-footer></my-footer>
+
+            </div>
+
+    </main>
+
+    <my-footera></my-footera>
     </div>
 
     <script src="/STKRHub-XAMPP/js/header.js"></script>
     <script src="/STKRHub-XAMPP/js/subnav.js"></script>
     <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
 
     <script>
         function updateCartPrice(cartId, productPrice) {
