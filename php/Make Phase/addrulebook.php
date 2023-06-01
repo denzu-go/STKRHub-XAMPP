@@ -148,9 +148,7 @@
               <div class="title-of-section">
                 <p>Make Phase</p>
                 <p class="description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                  sunt tempora earum quaerat officiis fuga assumenda ipsa
-                  suscipit libero unde!
+                  
                 </p>
               </div>
 
@@ -234,11 +232,12 @@
       </main>
 
       <!-- FOOTER -->
-      <my-footer></my-footer>
+      <my-footera></my-footera>
     </div>
 
     <script src="/STKRHub-XAMPP/js/header.js"></script>
     <script src="/STKRHub-XAMPP/js/subnav.js"></script>
     <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
   </body>
 </html>

@@ -175,7 +175,7 @@ if (isset($_SESSION["user_id"])) {
 
                                 <div class="text">
                                     <div class="game-title">
-                                        <h3>ito ang title</h3>
+                                        <h3>Game Title</h3>
                                     </div>
                                     <div class="rating"></div>
                                     <div class="publisher">
@@ -195,7 +195,7 @@ if (isset($_SESSION["user_id"])) {
 
                                 <div class="text">
                                     <div class="game-title">
-                                        <h3>ito ang title</h3>
+                                        <h3>Game Title</h3>
                                     </div>
                                     <div class="rating"></div>
                                     <div class="publisher">
@@ -215,7 +215,7 @@ if (isset($_SESSION["user_id"])) {
 
                                 <div class="text">
                                     <div class="game-title">
-                                        <h3>ito ang title</h3>
+                                        <h3>Game Title</h3>
                                     </div>
                                     <div class="rating"></div>
                                     <div class="publisher">
@@ -235,7 +235,7 @@ if (isset($_SESSION["user_id"])) {
 
                                 <div class="text">
                                     <div class="game-title">
-                                        <h3>ito ang title</h3>
+                                        <h3>Game Title</h3>
                                     </div>
                                     <div class="rating"></div>
                                     <div class="publisher">
@@ -256,7 +256,7 @@ if (isset($_SESSION["user_id"])) {
       </main>
 
 
-        <my-footer></my-footer>
+        <my-footera></my-footera>
     </div>
 
 
@@ -264,6 +264,7 @@ if (isset($_SESSION["user_id"])) {
     <script src="/STKRHub-XAMPP/js/header.js"></script>
     <script src="/STKRHub-XAMPP/js/subnav.js"></script>
     <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
 </body>
 
 </html>

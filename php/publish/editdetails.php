@@ -192,9 +192,7 @@
             <div class="title-of-section">
               <p>Vitals</p>
               <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                sunt tempora earum quaerat officiis fuga assumenda ipsa
-                suscipit libero unde!
+                
               </p>
             </div>
 
@@ -242,9 +240,7 @@
             <div class="title-of-section">
               <p>Pricing</p>
               <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                sunt tempora earum quaerat officiis fuga assumenda ipsa
-                suscipit libero unde!
+                
               </p>
             </div>
 
@@ -287,9 +283,7 @@
             <div class="title-of-section">
               <p>Marketing</p>
               <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                sunt tempora earum quaerat officiis fuga assumenda ipsa
-                suscipit libero unde!
+                
               </p>
             </div>
 
@@ -301,18 +295,14 @@
                     <h4>Short Description</h4>
                     <textarea class="textarea-short" name="text" cols="35" rows="4" minlength="20" maxlength="400" required placeholder="Enter your short description here"></textarea>
                     <p class="description">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                      sunt tempora earum quaerat officiis fuga assumenda ipsa
-                      suscipit libero unde!
+                      
                     </p>
                     <br><br>
 
                     <h4>Long Description</h4>
                     <textarea class="textarea-long" name="text" cols="35" rows="4" minlength="20" maxlength="400" required placeholder="Enter your long description here"></textarea>
                     <p class="description">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                      sunt tempora earum quaerat officiis fuga assumenda ipsa
-                      suscipit libero unde!
+                      
                     </p>
                     <br><br>
 
@@ -330,9 +320,7 @@
             <div class="title-of-section">
               <p>Game Logo</p>
               <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                sunt tempora earum quaerat officiis fuga assumenda ipsa
-                suscipit libero unde!
+                
               </p>
             </div>
 
@@ -362,9 +350,7 @@
             <div class="title-of-section">
               <p>Taxonomy</p>
               <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                sunt tempora earum quaerat officiis fuga assumenda ipsa
-                suscipit libero unde!
+                
               </p>
             </div>
 
@@ -423,9 +409,7 @@
             <div class="title-of-section">
               <p>Action Shots</p>
               <p class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                sunt tempora earum quaerat officiis fuga assumenda ipsa
-                suscipit libero unde!
+                
               </p>
             </div>
 

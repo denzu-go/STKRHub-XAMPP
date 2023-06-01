@@ -292,13 +292,14 @@ if (isset($_GET['category'])) {
             </div>
         </main>
 
-        <my-footer></my-footer>
+        <my-footera></my-footera>
     </div>
 
 
     <script src="/STKRHub-XAMPP/js/header.js"></script>
     <script src="/STKRHub-XAMPP/js/subnav.js"></script>
     <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
 </body>
 
 </html>

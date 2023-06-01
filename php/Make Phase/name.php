@@ -146,9 +146,7 @@
               <div class="title-of-section">
                 <p>Make Phase</p>
                 <p class="description">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                  sunt tempora earum quaerat officiis fuga assumenda ipsa
-                  suscipit libero unde!
+                  
                 </p>
               </div>
 
