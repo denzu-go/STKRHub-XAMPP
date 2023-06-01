@@ -167,7 +167,7 @@ if (isset($_SESSION["user_id"])) {
                 <div class="content">
 
                     <div class="item">
-                        <a href="#">
+                        <a href="/STKRHub-XAMPP/php/gamepage.php">
                             <div class="item-box">
                                 <div class="pic">
                                     <img src="/STKRHub-XAMPP/img/main-banner.png" alt="">
@@ -187,7 +187,7 @@ if (isset($_SESSION["user_id"])) {
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a href="/STKRHub-XAMPP/php/gamepage.php">
                             <div class="item-box">
                                 <div class="pic">
                                     <img src="/STKRHub-XAMPP/img/main-banner.png" alt="">
@@ -207,7 +207,7 @@ if (isset($_SESSION["user_id"])) {
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a href="/STKRHub-XAMPP/php/gamepage.php">
                             <div class="item-box">
                                 <div class="pic">
                                     <img src="/STKRHub-XAMPP/img/main-banner.png" alt="">
@@ -227,7 +227,7 @@ if (isset($_SESSION["user_id"])) {
                     </div>
 
                     <div class="item">
-                        <a href="#">
+                        <a href="/STKRHub-XAMPP/php/gamepage.php">
                             <div class="item-box">
                                 <div class="pic">
                                     <img src="/STKRHub-XAMPP/img/main-banner.png" alt="">

@@ -1,0 +1,376 @@
+@import url(/STKRHub-XAMPP/css/header.css);
+@import url(/STKRHub-XAMPP/css/footer.css);
+@import url(/STKRHub-XAMPP/css/subnav.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    width: 100%;
+} 
+
+h1, h2, h3, h4, h5, h6{
+    color: #fff;
+    font-family: 'SF Compact Displays', sans-serif;
+}
+
+
+/* main CSS -----------------------------------------------------------------------------*/
+main{
+    display: flex;
+    justify-content: center;
+
+    
+    background: rgb(15,16,32);
+    background: linear-gradient(180deg, rgba(15,16,32,1) 0%, rgba(22,24,48,1) 37%);
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+    width: 1200px;
+
+    margin: 40px auto;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* UPPER LEFT */
+.upper-left{
+    width: 742px;
+    
+}
+
+
+
+/* box */
+.game-media{
+    display: flex;
+}
+
+.box1{
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+}
+
+.big-pic{
+    width: 742px;
+    height: 417px;
+}
+
+.big-pic img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.pics{
+    display: flex; 
+    justify-content: center;
+
+    gap: 15px;
+
+    cursor: pointer;
+}
+
+.smallPic:active{
+    border: 2px solid #15172E;
+}
+
+.smallPic{
+    width: 90px;
+    height: 51px;
+    border-radius: 7px;
+}
+/* end of main CSS --------------------------*/
+
+
+
+/* UPPER RIGHT */
+.upper-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    width: 420px;
+    height: auto;
+
+    gap: 10px;
+    padding: 20px;
+}
+
+.game-logo{
+    background-color: #15172E;
+    width: 350px;
+    height: 150px;
+}
+
+.gamelogo{
+    width: 10px;
+}
+
+/* RIGHT MID 
+    price
+    rating
+    add to cart */
+
+.right-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 10px;
+    width: 350px;
+}
+
+.game-price{
+    
+    width: 100%;
+    height: 20px;
+}
+
+.game-rating{
+    
+    width: 100%;
+    height: 20px;
+}
+
+
+/* add to cart ----------------------------*/
+.add-to-cart{
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+
+    color: #fff;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 300%;
+    border-radius: 7px;
+    z-index: 1;
+}
+  
+.add-to-cart:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+  
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+}
+  
+.add-to-cart:before {
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(90deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8);
+    background-size: 400%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.add-to-cart:hover::before {
+    filter: blur(10px);
+}
+  
+.add-to-cart:active {
+    background: linear-gradient(32deg,#ffffff,#ffffff,#ffffff, #ffffff);
+    /* background: linear-gradient(32deg,#b85fe8,#28dbe5,#3a88e6, #b85fe8); */
+}
+
+/* end of add to cart ----------------------------*/
+
+
+
+.right-low{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* INFO */
+.info{
+    display: flex;
+    justify-content: center;
+
+    width: 420px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    
+}
+
+.a{
+    width: 100%;
+    
+    
+    display: flex;
+    justify-content: start;
+}
+
+.b{
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+
+
+/* mid specs and need help -------------------------------------------------*/
+.mid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    height: auto;
+
+    color: #c2c2c2;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.specs{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.help{
+    
+}
+
+.spec-text{
+    width: 800px;
+    line-height: 2;
+
+    
+    
+}
+
+
+ul li{
+    list-style: none;
+    list-style-position: inside;
+}
+
+.help-text{
+    width: 300px;
+    line-height: 2;
+    
+}
+/* end of mid specs and need help -------------------------------------------------*/
+
+
+/* GENRE */
+.genre{
+    border-left: #fff solid 1px;
+    padding-left: 10px;
+}
+
+.game-genre{
+    display: flex;
+    gap: 20px;
+}
+
+.longdescription{
+
+}
+
+
+
+/* RATING */
+.rating{
+    /* background-color: #233222; */
+    height: 20px;
+}
+
+.comments{
+    /* background-color: #233222; */
+    height: 200px;   
+}
+
+i{
+    font-size: 25px;
+    color: #c2c2c2;
+}
+
+.follow{
+    padding-bottom: 20px;
+}
+
+/* low --------------------------*/
+.low{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    margin-top: 70px;
+
+    height: auto;
+
+    color: #c2c2c2;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.low-text{
+    display: flex;
+    justify-content: center;
+
+    width: 727px;
+
+    padding: 20px;
+    background-color: #272A4E;
+}
+
+
+.low-text ul{
+    list-style: none;
+    list-style-position: inside;
+    display: flex;
+    gap: 30px;
+}
+
+.null{
+    width: 300px;
+}
+
+i{
+    font-size: 25px;
+    color: #c2c2c2;
+}
+
+.follow{
+    padding-bottom: 20px;
+}

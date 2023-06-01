@@ -1,7 +1,7 @@
-@import url(../css/header.css);
-@import url(../css/footer.css);
-@import url(../css/subnav.css);
-@import url(../css/make-table.css);
+@import url(/STKRHub-XAMPP/css/header.css);
+@import url(/STKRHub-XAMPP/css/footer.css);
+@import url(/STKRHub-XAMPP/css/subnav.css);
+@import url(/STKRHub-XAMPP/css/make-table.css);
 
 
 
@@ -279,6 +279,8 @@ p.description{
   main {
     display: flex;
     justify-content: center;
+
+  
 
     background: rgb(15, 16, 32);
     background: linear-gradient(

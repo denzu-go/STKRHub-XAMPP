@@ -319,7 +319,7 @@ if (isset($_SESSION["user_id"])) {
         /* end of change project name ----------------------------*/
 
         .mycreations-pic{
-            margin-top: 200px;
+        
             margin-left: 470px;
         }
 
@@ -340,7 +340,7 @@ if (isset($_SESSION["user_id"])) {
                         <p>Creation</p>
                     </div>
                     <div class="description">
-                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt tempora earum quaerat officiis fuga assumasdasdenda ipsa suscipit libero unde!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt tempora earum quaerat officiis fuga assumasdasdenda ipsa suscipit libero unde!</p>
+                        <p class="description">Make your own tabletop games, art, playing cards, and components.</p>
                     </div>
                 </div>
 
@@ -352,15 +352,24 @@ if (isset($_SESSION["user_id"])) {
                             <div class="content">
                                 <form action="" method="post">
                                     <input class="input-text" type="text" name="" placeholder="project name" />
-                                    <a href="#">
-                                        <input type="submit" class="submit" value="Create" />
+                                    <a href="../php/Make Phase/allcomponents.php">
+                                        <input type="" class="submit" value="Create" />
                                     </a>
                                 </form>
                             </div>
                         </div>
 
+
+                        <br><br>
                         <div class="my-creations">
                             <img src="/STKRHub-XAMPP/img/mycreations.png" alt="" class="mycreations-pic" width="50%">
+                        </div>
+                        
+
+                        <div class="my-creations">
+                            <a href="/STKRHub-XAMPP/php/publish/overview.php">
+                                <img src="/STKRHub-XAMPP/img/mycreationscopy.png" alt="" class="mycreations-pic" width="50%">
+                            </a>
                         </div>
                     </div>
 

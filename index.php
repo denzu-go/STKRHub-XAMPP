@@ -125,7 +125,7 @@ if (isset($_SESSION["user_id"])) {
             <?php endif; ?>
         </main>
 
-        <my-footer></my-footer>
+        <my-footera></my-footera>
     </div>
 
     <!-- ================================================================================ -->
@@ -144,6 +144,7 @@ if (isset($_SESSION["user_id"])) {
     <script src="/STKRHub-XAMPP/js/header.js"></script>
     <script src="/STKRHub-XAMPP/js/subnav.js"></script>
     <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
 </body>
 
 </html>

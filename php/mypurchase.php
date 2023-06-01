@@ -577,7 +577,7 @@
 
                   <li>
                     <a href="profile.php">
-                      <div class="container-a  container-active">
+                      <div class="container-a ">
                         <span id="nav"> Profile </span>
                       </div>
                     </a>
@@ -609,7 +609,7 @@
 
                   <li>
                     <a href="mypurchase.php">
-                      <div class="container-a">
+                      <div class="container-a container-active">
                         <span id="nav"> My Purchase </span>
                       </div>
                     </a>
@@ -632,36 +632,11 @@
         <div class="body">
           <div class="container-body">
             <section id="profile" class="section">
-              <button class="btn" type="button">Edit</button>
-
-              <br><br>
-              <form action="" method="post">
-                <h4>username</h4>
-                <input class="input-text" type="text" name="" placeholder="username" maxlength="70" />
-                <br><br>
-
-                <h4>Real Name</h4>
-                <input class="input-text" type="text" name="" placeholder="Denzel Go" maxlength="70" />
-                <br><br>
-
-                <h4>Avatar</h4>
-                <form method="post" action="" enctype="multipart/form-data">
-
-                  <div class="preview" id="previewDiv">
-                    upload your avatar <!-- Initial dimensions text -->
-                  </div>
-                  <br>
-
-                  <input class="imgupload" type="file" name="fileImg" id="fileImg"><br>
-                  <button class="btn" type="button" onclick="clearImage();">Clear Picture</button> <!-- Added clear button -->
-                  <!-- <button type="button" onclick="submitData();">Submit</button> -->
-                </form>
-              </form>
-
-              <br><br><br>
-              <button type="submit" class="submit" id="profile-submit">
-                Save Changes
-              </button>
+                <div class="upper-nav">
+                    <div class="nav"></div>
+                    <div class="nav"></div>
+                    <div class="nav"></div>
+                </div>
             </section>
           </div>
         </div>

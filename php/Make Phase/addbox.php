@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- css -->
-    <!-- <link rel="stylesheet" href="../css/make phase.css" /> -->
+    <link rel="stylesheet" href="/STKRHub-XAMPP/css/make phase.css">
 
     <!-- icons -->
-    <link rel="shortcut icon" type="image" href="../../img/logo.png" />
+    <link rel="shortcut icon" type="image" href="/img/logo.png" />
 
     <link
       rel="stylesheet"
@@ -81,72 +81,73 @@
     <title>Make Phase - All Components</title>
 
     <style>
-      @import url(../css/header.css);
-      @import url(../css/footer.css);
-      @import url(../css/subnav.css);
-      @import url(../css/make-table.css);
-      @import url(../../css/make\ phase.css);
+      @import url(/STKRHub-XAMPP/css/header.css);
+      @import url(/STKRHub-XAMPP/css/footer.css);
+      @import url(/STKRHub-XAMPP/css/subnav.css);
+      @import url(/STKRHub-XAMPP/css/make-table.css);
+      @import url(/STKRHub-XAMPP/css/make\ phase.css);
     </style>
   </head>
   <body>
     <div class="container">
       <!-- HEADER -->
-      <my-header-for-components></my-header-for-components>
+      <my-header></my-header>
 
       <!-- MAIN -->
       <main>
         <div class="sidemenu">
           <div class="side-left">
-            <img src="../../img/make-bg.png" alt="">
+            <img src="/STKRHub-XAMPP/img/make-bg.png" alt="">
           </div>
           <div class="side-right">
             <div class="ul-container">
-              <ul>
-                <nav>
-                  <li>
-                    <a href="/html/Make Phase/allcomponents.html">
-                      <div class="container-a container-active">
-                        <i class="fas fa-bars"></i>
-                        <a href="./allcomponents.html"><span id="span-allcomponents"> All Components </span></a>
-                      </div>
-                    </a>
-                  </li>
+            <ul>
+              <nav>
+                <li>
+                  <a href="">
+                    <div class="container-a ">
+                      <i class="fas fa-bars"></i>
+                      <a href="/STKRHub-XAMPP/php/Make Phase/allcomponents.php"><span id="span-allcomponents"> All Components </span></a>
+                    </div>
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="/html/Make Phase/addrulebook.html">
-                      <div class="container-a">
-                        <i class="fa-solid fa-book"></i>
-                        <a href="./addrulebook.html"><span id="span-addrulebook"> Add Rulebook </span></a>
-                      </div>
-                    </a>
-                  </li>
+                <li>
+                  <a href="">
+                    <div class="container-a ">
+                      <i class="fa-solid fa-book"></i>
+                      <a href="/STKRHub-XAMPP/php/Make Phase/addrulebook.php"><span id="span-addrulebook"> Add Rulebook </span></a>
+                    </div>
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="/html/Make Phase/addbox.html">
-                      <div class="container-a">
-                        <i class="fa-sharp fa-solid fa-box"></i>
-                        <a href="./addbox.html"><span id="span-addbox"> Add box </span></a>
-                      </div>
-                    </a>
-                  </li>
+                <li>
+                  <a href="">
+                    <div class="container-a container-active">
+                      <i class="fa-sharp fa-solid fa-box"></i>
+                      <a href="/STKRHub-XAMPP/php/Make Phase/addbox.php"><span id="span-addbox"> Add box </span></a>
+                    </div>
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="/html/Make Phase/name.html">
-                      <div class="container-a">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                        <a href="./name.html"><span id="span-name"> Name </span></a>
-                      </div>
-                    </a>
-                  </li>
-                </nav>
-              </ul>
-            </div>
+                <li>
+                  <a href="">
+                    <div class="container-a">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                      <a href="/STKRHub-XAMPP/php/Make Phase/name.php"><span id="span-name"> Name </span></a>
+                    </div>
+                  </a>
+                </li>
+              </nav>
+            </ul>
           </div>
+            </div>
         </div>
         <div class="body">
           <div class="container-body">
+
             <!-- TODO:TODO:TODO:TODO: -->
-            <section id="allcomponents" class="section section-active">
+            <section id="addbox" class="section">
               <div class="title-of-section">
                 <p>Make Phase</p>
                 <p class="description">
@@ -165,7 +166,7 @@
                       </a>
                     </div>
 
-                    <div class="table-components">Components</div>
+                    <div class="table-components">Box</div>
 
                     <div class="table-quantity">Quantity</div>
 
@@ -216,20 +217,14 @@
                 </div>
 
                 <div class="right-side">
-                  <div class="total-cost">
-                    <h3>Total Cost: <span id="total-cost">P900</span></h3>
-                  </div>
-
-                  <a href="#add-to-cart">
-                    <div class="add-to-cart">
-                      <p>Add to cart</p>
-                    </div>
-                  </a>
+                  <!-- <div class="total-cost">
+                                <h3>Total Cost: <span id="total-cost">P900</span></h3>
+                              </div> -->
 
                   <a href="#add-component">
                     <div class="add-component">
                       <i class="fas fa-plus-square"></i>&nbsp&nbsp
-                      <p>Add Component</p>
+                      <p>Add Box</p>
                     </div>
                   </a>
                 </div>
@@ -242,20 +237,13 @@
       </main>
 
       <!-- FOOTER -->
-      <my-footer-for-components></my-footer-for-components>
-      <script src="./js/main.js"></script>
-      <script src="./js/login.js"></script>
-      <script src="../../js/main.js"></script>
-      <script src="../../js/header.js"></script>
-      <script src="../../js/header-for-components.js"></script>
-      <script src="../js/subnav.js"></script>
-      <script src="../js/footer.js"></script>
-      <script src="../../js/footer-for-components.js"></script>
-
-
-      <script>
-
-      </script>
+      <my-footera></my-footera>
     </div>
+
+
+    <script src="/STKRHub-XAMPP/js/header.js"></script>
+    <script src="/STKRHub-XAMPP/js/subnav.js"></script>
+    <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
   </body>
 </html>

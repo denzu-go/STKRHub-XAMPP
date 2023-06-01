@@ -1,6 +1,6 @@
 @import url(../css/header.css);
-@import url(../css/footer.css);
-@import url(../css/subnav.css);
+@import url(../../css/footer.css);
+@import url(../../css/subnav.css);
 @import url(../css/make-table.css);
 
 * {

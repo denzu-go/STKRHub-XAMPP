@@ -46,6 +46,7 @@ $mysqli = require __DIR__ . "/database.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
 </head>
+
 <body>
     <h1> ORDERS</h1>
 

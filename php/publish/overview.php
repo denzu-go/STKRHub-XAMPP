@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- css -->
-    <!-- <link rel="stylesheet" href="../css/make phase.css" /> -->
+    <link rel="stylesheet" href="/STKRHub-XAMPP/css/make phase.css" />
 
     <!-- icons -->
-    <link rel="shortcut icon" type="image" href="../../img/logo.png" />
+    <link rel="shortcut icon" type="image" href="/STKRHub-XAMPP/img/logo.png" />
 
     <link
       rel="stylesheet"
@@ -81,23 +81,24 @@
     <title>Publish - Overview</title>
 
     <style>
-      @import url(../css/header.css);
-      @import url(../css/footer.css);
-      @import url(../css/subnav.css);
-      @import url(../css/make-table.css);
-      @import url(../../css/publish.css);
+      @import url(/STKRHub-XAMPP/css/header.css);
+      @import url(/STKRHub-XAMPP/css/footer.css);
+      @import url(/STKRHub-XAMPP/css/footera.css);
+      @import url(/STKRHub-XAMPP/css/subnav.css);
+      @import url(/STKRHub-XAMPP/css/make-table.css);
+      @import url(/STKRHub-XAMPP/css/publish.css);
     </style>
   </head>
   <body>
     <div class="container">
       <!-- HEADER -->
-      <my-header-for-components></my-header-for-components>
+      <my-header></my-header>
 
       <!-- MAIN -->
       <main>
         <div class="sidemenu">
           <div class="side-left">
-            <img src="../../img/publish-bg.png" alt="">
+            <img src="/STKRHub-XAMPP/img/publish-bg.png" alt="">
           </div>
           <div class="side-right">
             <div class="ul-container">
@@ -105,19 +106,19 @@
                 <nav>
 
                   <li>
-                    <a href="/html/Publish/overview.html">
+                    <a href="">
                       <div class="container-a container-active">
                         <i class="fas fa-bars"></i>
-                        <a href="./overview.html"><span id="span-overview"> Overview </span></a>
+                        <a href="/STKRHub-XAMPP/php/publish/overview.php"><span id="span-overview"> Overview </span></a>
                       </div>
                     </a>
                   </li>
 
                   <li>
-                    <a href="/html/Publish/editdetails.html">
+                    <a href="">
                       <div class="container-a">
                         <i class="fa-solid fa-vials"></i>
-                        <a href="./editdetails.html"><span id="span-vitals"> Edit Details </span></a>
+                        <a href="/STKRHub-XAMPP/php/publish/editdetails.php"><span id="span-vitals"> Edit Details </span></a>
                       </div>
                     </a>
                   </li>
@@ -142,7 +143,7 @@
               </div>
 
               <div class="content">
-                <div class="choice">
+                <!-- <div class="choice">
                   <div class="yes">
                       <button class="btn">
                           Publish this
@@ -162,7 +163,7 @@
                           If you did not publish this... Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perferendis pariatur itaque, repudiandae inventore ratione in! Accusantium quidem laboriosam voluptatem mollitia reiciendis architecto quibusdam dolorem quae, modi cum fuga ullam.
                       </p>                              
                   </div>
-                </div>
+                </div> -->
 
                 <div class="components-table">
                   <div class="table-header">
@@ -270,20 +271,13 @@
       </main>
 
       <!-- FOOTER -->
-      <my-footer-for-components></my-footer-for-components>
-      <script src="./js/main.js"></script>
-      <script src="./js/login.js"></script>
-      <script src="../../js/main.js"></script>
-      <script src="../../js/header.js"></script>
-      <script src="../../js/header-for-components.js"></script>
-      <script src="../js/subnav.js"></script>
-      <script src="../js/footer.js"></script>
-      <script src="../../js/footer-for-components.js"></script>
-
-
-      <script>
-
-      </script>
+      <my-footera></my-footera>
     </div>
+
+
+    <script src="/STKRHub-XAMPP/js/header.js"></script>
+    <script src="/STKRHub-XAMPP/js/subnav.js"></script>
+    <script src="/STKRHub-XAMPP/js/footer.js"></script>
+    <script src="/STKRHub-XAMPP/js/footera.js"></script>
   </body>
 </html>

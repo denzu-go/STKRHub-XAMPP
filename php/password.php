@@ -610,7 +610,7 @@
   <body>
     <div class="container">
       <!-- HEADER -->
-      <my-header-for-components></my-header-for-components>
+      <my-header></my-header>
 
       <!-- MAIN -->
       <main>
@@ -670,7 +670,7 @@
                         </li>                  
       
                         <li>
-                          <a href="#">
+                          <a href="/STKRHub-XAMPP/php/logout.php">
                             <div class="container-a">
                               <span id="nav"> Signout </span>
                             </div>
@@ -733,12 +733,13 @@
       </main>
 
         <!-- FOOTER -->
-        <my-footer></my-footer>
+        <my-footera></my-footera>
 
 
         <script src="/STKRHub-XAMPP/js/header.js"></script>
         <script src="/STKRHub-XAMPP/js/subnav.js"></script>
         <script src="/STKRHub-XAMPP/js/footer.js"></script>
+        <script src="/STKRHub-XAMPP/js/footera.js"></script>
 
 
     </div>
